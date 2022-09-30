@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 $(".accordion").on("click", function (e) {
     $(this).toggleClass("active");
 
@@ -20,7 +21,7 @@ const $imgEcoscore = $("#imgEcoscore");
 const $ingredients = $("#listeIngredients");
 const $caracteristiques = $("#carac");
 const $tableNut = $("#tableNutri");
-const regex = /[\d]{8,13}/;
+const regex = /[0-9]{8,13}/;
 let resultat;
 
 /**
@@ -66,7 +67,7 @@ const afficherScores = function (resultat) {
             $imgNova.attr("src", "/images/nova-group-1.svg");
             break;
         case 2:
-            $imgNova.attr("src", "/images/nova-group-2.svg");
+            $imgNova.attr("src", "/images/nova-grousssszzp-2.svg");
             break;
         case 3:
             $imgNova.attr("src", "/images/nova-group-3.svg");
