@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Yuk'EssenV2</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles\css\style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <header class="container-xl">
+                <div class="banniere row align-items-center">
+                    <div class="logo col-12 col-sm-5">
+                        <img
+                            class="logoImg d-flex justify-content-center"
+                            title="le logo du site"
+                            src="images/logo.png"
+                            alt="logo du site"
+                        />
+                    </div>
+                    <div class="top col-12 col-sm-7">
+                        <div class="titre">
+                            <h1>Yuk'Essen</h1>
+                            <h2 class="rfs-18">La santé par l'assiette</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="formulaire">
+                    <form
+                        id="demande"
+                        class="row d-flex flex-column flex-sm-row justify-content-center my-3"
+                    >
+                        <input
+                            minlength="8"
+                            maxlength="13"
+                            class="loupe col-12 col-sm-6"
+                            type="text"
+                            requiered="required"
+                            title="Code Barre"
+                            name="rechercher"
+                            id="rechercher"
+                            placeholder="Code barre ..."
+                            pattern="[0-9]{8,13}"
+                        />
+                        <button class="col-12 col-sm-6" type="submit" id="btn">
+                            <span>Rechercher</span>
+                        </button>
+                    </form>
+                </div>
+            </header>
+            <main>
+                <section id="section" class="row m-0 cacher gy-sm-0">
+                    <aside
+                        id="conteneurPhoto"
+                        class="col-12 col-sm-3 d-flex justify-content-center m-2 g-sm-0 px-0"
+                        aria-label="photo du produit"
+                    >
+                        <div class="w-100">
+                            <img
+                                class="rounded w-100"
+                                id="imgProduct"
+                                src="/images/vide.png"
+                                alt="image du produit"
+                                title="photo du produit"
+                            />
+                        </div>
+                    </aside>
+                    <article class="col-12 col-sm-6">
+                        <div id="caracteristiques">
+                            <button class="accordion">
+                                Caractéristiques du produit
+                            </button>
+                            <div class="panel">
+                                <p id="carac"></p>
+                            </div>
+                        </div>
+                        <div id="ingredients">
+                            <button class="accordion">
+                                Ingrédients dont
+                                <span class="allergen">allergènes</span>
+                            </button>
+                            <div class="panel">
+                                <p id="listeIngredients"></p>
+                            </div>
+                        </div>
+                        <div id="tableau-nutritionnel">
+                            <button class="accordion">
+                                Tableau nutritionnel
+                            </button>
+                            <div class="panel">
+                                <div id="tableNutri"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <aside
+                        class="score col-12 col-sm-2"
+                        aria-label="image du nutriscore"
+                    >
+                        <img
+                            class="w-100 my-1"
+                            id="imgNutri"
+                            src="/images/vide.png"
+                            alt="image du nutriscore"
+                            title="nutriscore"
+                        />
+                        <img
+                            class="w-100 my-1"
+                            id="imgEcoscore"
+                            src="/images/vide.png"
+                            alt="image du Ecoscore"
+                            title="Ecoscore"
+                        />
+                        <img
+                            class="w-50 my-1 d-block m-auto"
+                            id="imgNova"
+                            src="/images/vide.png"
+                            alt="image du NovaScore"
+                            title="NovaScore"
+                        />
+                    </aside>
+                </section>
+            </main>
+            <footer>
+                <ul class="liste row d-flex justify-content-center">
+                    <li class="col-12 col-sm-4 d-flex justify-content-center">
+                        <a
+                            title="mentions legales"
+                            class="mentions"
+                            href="#openModal"
+                            >Mentions légales</a
+                        >
+                        <div id="openModal" class="modalDialog">
+                            <div>
+                                <a href="#close" title="Close" class="close"
+                                    >X</a
+                                >
+                                <h2>Mentions légales</h2>
+                                <p>
+                                    Les mentions relatives à la propriété
+                                    intellectuelle et à l'hébergement du site.
+                                </p>
+                            </div>
+                            <a href="#close" title="Close" class="close">x</a>
+                        </div>
+                    </li>
+                    <li class="col-12 col-sm-4 d-flex justify-content-center">
+                        <a title="about" class="sommes-nous" href="#openModal2"
+                            >Qui sommes-nous ?</a
+                        >
+                        <div id="openModal2" class="modalDialog">
+                            <div>
+                                <a href="#close" title="Close" class="close"
+                                    >X</a
+                                >
+                                <h2>Qui sommes-nous ?</h2>
+                                <p>Étudiant en informatique.</p>
+                            </div>
+                            <a href="#close" title="Close" class="close">x</a>
+                        </div>
+                    </li>
+                    <li class="col-12 col-sm-4 d-flex justify-content-center">
+                        <a title="about" class="sommes-nous" href="#openModal3"
+                            >Contact</a
+                        >
+                        <div id="openModal3" class="modalDialog">
+                            <div>
+                                <a href="#close" title="Close" class="close"
+                                    >X</a
+                                >
+                                <h2>Contact</h2>
+                                <p>
+                                    romain@email.com <br />
+                                    06 07 08 09 10
+                                </p>
+                            </div>
+                            <a href="#close" title="Close" class="close">x</a>
+                        </div>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+        <script type="module" src="scripts/index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    </body>
+</html>
