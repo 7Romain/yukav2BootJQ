@@ -374,8 +374,7 @@ const afficherCaracteristiques = function (resultat) {
         texte +=
             "<span class= 'gras' >Préparation : </span>" +
             resultat.products[0]["preparation_fr"] +
-            "\n" +
-            "\n";
+            "<br/><br/>";
     }
 
     if (resultat.products[0]["traces_imported"]) {
