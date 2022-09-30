@@ -349,7 +349,7 @@ tbody tr:nth-child(even) {
 .liste {
     display: flex;
     text-align: center;
-    margin: 05px;
+    margin: 5px;
     margin-bottom: 5px;
 
 
@@ -362,13 +362,17 @@ tbody tr:nth-child(even) {
     width: 163px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 7px;
-    margin-right: (7px + 10vw);
+    /* margin-left: 7px;
+    margin-right: (7px + 10vw); */
     background-color: rgb(200, 243, 247);
     border-radius: 10px;
     border: 1px solid #046d12;
     padding: 1px 10px 1px 10px;
     cursor: pointer;
+}
+
+ul {
+    padding-left: 0;
 }
 
 @media (max-width: 576px) {
@@ -386,7 +390,8 @@ tbody tr:nth-child(even) {
 
     .liste>li {
         display: block;
-        width: auto;
+        width: 163px;
+
         margin-top: 5px;
         margin-bottom: 5px;
         background-color: rgb(200, 243, 247);
