@@ -233,6 +233,7 @@ h2 {
     position: fixed;
     font-family: Arial, Helvetica, sans-serif;
     top: 0;
+    color: #1c2aef;
     right: 0;
     bottom: 0;
     left: 0;
@@ -256,9 +257,9 @@ h2 {
     margin: 10% auto;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
-    background: -moz-linear-gradient(#2edbe8, #01a6b2);
-    background: -webkit-linear-gradient(#2edbe8, #01a6b2);
-    background: -o-linear-gradient(#2edbe8, #01a6b2);
+    background: -moz-linear-gradient(#2ee8aa, #027729);
+    background: -webkit-linear-gradient(#2ee8aa, #027729);
+    background: -o-linear-gradient(#2ee8aa, #027729);
 }
 
 .table-style {
@@ -392,8 +393,7 @@ ul {
         display: block;
         width: 163px;
 
-        margin-top: 5px;
-        margin-bottom: 5px;
+
         background-color: rgb(200, 243, 247);
         border-radius: 10px;
         border: 1px solid #046d12;
@@ -439,4 +439,8 @@ ul {
 
 a:link {
     text-decoration: none;
+}
+
+.gras {
+    font-weight: bold;
 }
