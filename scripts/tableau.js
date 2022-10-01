@@ -48,7 +48,9 @@ export const afficherTableau = function (resultat) {
     heading1.html(" ");
 
     const heading2 = $("<th></th>");
-    heading2.html("pour " + resultat.products[0]["nutrition_data_per"]);
+    heading2.html(
+        "pour " + resultat.products[0]["nutrition_data_prepared_per"]
+    );
     row1.append(heading1);
     row1.append(heading2);
     thead.append(row1);
