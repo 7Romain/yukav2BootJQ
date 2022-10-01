@@ -35,12 +35,12 @@
                 <div class="formulaire">
                     <form
                         id="demande"
-                        class="row d-flex flex-column flex-sm-row justify-content-center my-3"
+                        class="row align-items-center d-flex flex-column flex-sm-row justify-content-center my-3"
                     >
                         <input
                             minlength="8"
                             maxlength="13"
-                            class="loupe col-12 col-sm-6"
+                            class="loupe col-12 col-sm-6 d-inline-block text-center ps-3 m-1"
                             type="text"
                             requiered="required"
                             title="Code Barre"
@@ -49,7 +49,11 @@
                             placeholder="Code barre ..."
                             pattern="[0-9]{8,13}"
                         />
-                        <button class="col-12 col-sm-6" type="submit" id="btn">
+                        <button
+                            class="col-12 col-sm-6 d-inline-block text-cente"
+                            type="submit"
+                            id="btn"
+                        >
                             <span>Rechercher</span>
                         </button>
                     </form>
@@ -128,19 +132,24 @@
                 </section>
             </main>
             <footer>
-                <ul class="liste row d-flex justify-content-center mx-auto">
+                <ul
+                    class="liste row d-flex justify-content-center mx-auto d-flex"
+                >
                     <li
-                        class="col-12 col-sm-4 d-flex justify-content-center mx-auto"
+                        class="col-12 col-sm-4 d-flex justify-content-center mx-auto text-center"
                     >
                         <a
                             title="mentions legales"
-                            class="mentions"
+                            class="mentions text-decoration-none"
                             href="#openModal"
                             >Mentions légales</a
                         >
                         <div id="openModal" class="modalDialog">
                             <div>
-                                <a href="#close" title="Close" class="close"
+                                <a
+                                    href="#close"
+                                    title="Close"
+                                    class="text-decoration-none close"
                                     >X</a
                                 >
                                 <h2>Mentions légales</h2>
@@ -149,35 +158,57 @@
                                     intellectuelle et à l'hébergement du site.
                                 </p>
                             </div>
-                            <a href="#close" title="Close" class="close">x</a>
+                            <a
+                                href="#close"
+                                title="Close"
+                                class="close text-decoration-none"
+                                >x</a
+                            >
                         </div>
                     </li>
                     <li
                         class="col-12 col-sm-4 d-flex justify-content-center mx-auto"
                     >
-                        <a title="about" class="sommes-nous" href="#openModal2"
+                        <a
+                            title="about"
+                            class="sommes-nous text-decoration-none"
+                            href="#openModal2"
                             >Qui sommes-nous ?</a
                         >
                         <div id="openModal2" class="modalDialog">
                             <div>
-                                <a href="#close" title="Close" class="close"
+                                <a
+                                    href="#close"
+                                    title="Close"
+                                    class="close text-decoration-none"
                                     >X</a
                                 >
                                 <h2>Qui sommes-nous ?</h2>
                                 <p>Étudiant en informatique.</p>
                             </div>
-                            <a href="#close" title="Close" class="close">x</a>
+                            <a
+                                href="#close"
+                                title="Close"
+                                class="close text-decoration-none"
+                                >x</a
+                            >
                         </div>
                     </li>
                     <li
                         class="col-12 col-sm-4 d-flex justify-content-center mx-auto"
                     >
-                        <a title="about" class="sommes-nous" href="#openModal3"
+                        <a
+                            title="about"
+                            class="sommes-nous text-decoration-none"
+                            href="#openModal3"
                             >Contact</a
                         >
                         <div id="openModal3" class="modalDialog">
                             <div>
-                                <a href="#close" title="Close" class="close"
+                                <a
+                                    href="#close"
+                                    title="Close"
+                                    class="close text-decoration-none"
                                     >X</a
                                 >
                                 <h2>Contact</h2>
@@ -186,7 +217,12 @@
                                     06 07 08 09 10
                                 </p>
                             </div>
-                            <a href="#close" title="Close" class="close">x</a>
+                            <a
+                                href="#close"
+                                title="Close"
+                                class="close text-decoration-none"
+                                >x</a
+                            >
                         </div>
                     </li>
                 </ul>
