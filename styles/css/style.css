@@ -42,6 +42,12 @@ h2 {
     margin: 0px;
 }
 
+
+#imgProduct {
+
+    border: solid 2px rgb(3, 83, 34);
+}
+
 @media (max-width: 576px) {
     .logoImg {
         width: 45%;
@@ -80,10 +86,8 @@ h2 {
     }
 
 
-
-
-
 }
+
 
 
 
