@@ -1,11 +1,11 @@
 /* eslint-disable no-undef */
-import { accordeon } from "./accordeon.js";
+// import { accordeon } from "./accordeon.js";
 import { afficherImageProduit, afficherScores } from "./images.js";
 import { afficherTableau } from "./tableau.js";
 import { afficherCaracteristiques } from "./caracteristiques.js";
 import { afficherIngredients } from "./ingredients.js";
 
-accordeon();
+// accordeon();
 const $section = $("#section");
 const $code = $("#rechercher");
 const $formulaire = $("#demande");

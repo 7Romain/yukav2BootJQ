@@ -29,5 +29,9 @@
         "editor.background": "#050505f8"
     },
     "peacock.color": "#12004c",
-    "liveServer.settings.port": 5651
+    "liveServer.settings.port": 5651,
+    "sonarlint.connectedMode.project": {
+        "connectionId": "",
+        "projectKey": ""
+    }
 }

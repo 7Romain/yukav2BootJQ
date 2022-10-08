@@ -154,51 +154,51 @@ h2 {
 
 
 /* Style the buttons that are used to open and close the accordion panel */
-.accordion {
+.accordion-button {
     background-color: #eee;
     color: #444;
-    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    /* cursor: pointer; */
     padding: 18px;
     width: 100%;
     text-align: left;
     outline: none;
-    transition: 0.4s;
+    /* transition: 0.4s; */
     border: #444 1px solid;
 
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
-.accordion:hover {
+.accordion-button:hover {
     background-color: rgb(200, 243, 247);
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
-    background-color: #6ed1d83d;
+    /* background-color: #6ed1d83d; */
 
-    display: none;
-    overflow: hidden;
+    /* display: none;
+    overflow: hidden; */
     margin-bottom: 10px;
     border: solid #6ed1d81c;
     border-radius: 4px;
 
 }
 
-.accordion:after {
-    content: '\02795';
-    /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    /* color: rgb(119, 119, 119); */
-    float: right;
-    margin-left: 5px;
+.accordion-body,
+.collapsed {
+
+    margin-bottom: 10px;
+    border: solid #6ed1d81c;
+    border-radius: 4px;
+    background-color: #6ed1d83d;
+
+
 }
 
-.active:after {
-    content: "\2796";
-    /* Unicode character for "minus" sign (-) */
-}
+
 
 .cacher {
     display: none;
@@ -316,7 +316,7 @@ tbody tr:nth-child(even) {
 
     }
 
-    .accordion {
+    .accordionStyle {
         font-size: 1.1em;
 
     }
