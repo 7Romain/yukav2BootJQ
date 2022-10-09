@@ -151,12 +151,18 @@ h2 {
 
 }
 
+#accordionExample,
+#caracteristiques,
+#ingredients,
+#tableau-nutritionnel {
+    background-color: rgb(200, 243, 247, .3);
+}
 
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion-button {
-    background-color: #eee;
-    color: #444;
+    background-color: #eeeeee;
+    color: rgb(68, 68, 68, );
     font-family: 'Times New Roman', Times, serif;
     /* cursor: pointer; */
     padding: 18px;
@@ -164,39 +170,44 @@ h2 {
     text-align: left;
     outline: none;
     /* transition: 0.4s; */
-    border: #444 1px solid;
+    border: rgb(0, 0, 0) 1px solid;
 
+}
+
+.accordion-button:not(.collapsed),
+#headingOne,
+#headingTwo,
+#headingThree {
+    background-color: rgb(200, 243, 247)
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion-button:hover {
-    background-color: rgb(200, 243, 247);
+
+    border: rgb(0, 0, 0) 1px solid;
 }
 
 /* Style the accordion panel. Note: hidden by default */
-.panel {
+/* .panel {
     padding: 0 18px;
-    /* background-color: #6ed1d83d; */
-
-    /* display: none;
-    overflow: hidden; */
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     border: solid #6ed1d81c;
     border-radius: 4px;
 
+} */
+
+.accordion-button:link,
+.accordion-button:visited,
+.accordion-button:hover,
+.accordion-button:active {
+    background-color: rgba(200,
+            243,
+            247);
 }
 
-.accordion-body,
-.collapsed {
-
-    margin-bottom: 10px;
-    border: solid #6ed1d81c;
-    border-radius: 4px;
-    background-color: #6ed1d83d;
 
 
-}
 
 
 
