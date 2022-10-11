@@ -433,3 +433,8 @@ ul {
 .gras {
     font-weight: bold;
 }
+
+
+#masquer {
+    display: none;
+}

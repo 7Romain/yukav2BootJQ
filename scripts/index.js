@@ -31,6 +31,8 @@ const afficher = function (resultat) {
  */
 
 $formulaire.on("submit", function (e) {
+    $section.attr("id", "masquer");
+    $section.removeAttr("id", "montrer");
     const $adresseReq =
         "http://fr.openfoodfacts.org/api/v2/search?code=" + $code.val();
     if (regex.test($code.val())) {
@@ -44,6 +46,7 @@ $formulaire.on("submit", function (e) {
                 console.table(resultat);
 
                 afficher(resultat);
+                $section.removeAttr("id", "masquer");
                 $section.attr("id", "montrer");
             }
         }).fail(function (err) {
