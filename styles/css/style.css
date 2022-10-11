@@ -151,11 +151,25 @@ h2 {
 
 }
 
-#accordionExample,
+
 #caracteristiques,
 #ingredients,
 #tableau-nutritionnel {
-    background-color: rgb(200, 243, 247, .3);
+
+
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+
+.pane {
+    margin-bottom: 10px;
+    background-color: #6ed1d83d;
+    border: solid #6ed1d81c;
+    border-radius: 4px;
+    /* padding: 0 18px; */
+
 }
 
 
@@ -181,21 +195,7 @@ h2 {
     background-color: rgb(200, 243, 247)
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.accordion-button:hover {
 
-    border: rgb(0, 0, 0) 1px solid;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-/* .panel {
-    padding: 0 18px;
-    margin-bottom: 0px;
-    border: solid #6ed1d81c;
-    border-radius: 4px;
-
-} */
 
 .accordion-button:link,
 .accordion-button:visited,
@@ -207,6 +207,14 @@ h2 {
 }
 
 
+
+table {
+    box-shadow: 0 5px 50px rgba(47, 136, 6, 0.15);
+
+    margin: 0px auto;
+    border: 2px solid rgb(3, 83, 34);
+    vertical-align: middle;
+}
 
 
 
@@ -238,7 +246,7 @@ h2 {
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.1);
-    z-index: 99999;
+    /* z-index: 99999; */
     opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
@@ -260,15 +268,6 @@ h2 {
     background: -moz-linear-gradient(#2ee8aa, #027729);
     background: -webkit-linear-gradient(#2ee8aa, #027729);
     background: -o-linear-gradient(#2ee8aa, #027729);
-}
-
-.table-style {
-    border-collapse: collapse;
-    box-shadow: 0 5px 50px rgba(47, 136, 6, 0.15);
-    cursor: pointer;
-    margin: 0px auto;
-    border: 2px solid rgb(3, 83, 34);
-    vertical-align: middle;
 }
 
 thead tr {
@@ -297,12 +296,12 @@ td {
 
 }
 
-tbody tr,
+/* tbody tr,
 td,
 th {
     border: 1px solid #ddd;
 
-}
+} */
 
 tbody tr:nth-child(even) {
     background-color: #f3f3f36e;
