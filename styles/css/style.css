@@ -74,7 +74,7 @@ h2 {
 
     #imgNutri {
         display: block;
-        width: 40%;
+        width: 30%;
     }
 
     #imgNova {
@@ -143,35 +143,54 @@ h2 {
     width: 195px;
 }
 
-.loupe {
+@media (max-width: 576px) {
+    #rechercher {
+        font-weight: bold;
+        min-width: 175px;
+    }
+
+    #btn {
+        block-size: 60px;
+        font-size: 1.3em;
+    }
+
+    h2 {
+        font-weight: bold;
+    }
 
 
-    background: url("/images/loupe.svg") no-repeat left;
-    background-size: 20px;
+    .accordion {
+        font-size: 1.1em;
+    }
+
+    #headingOne>button:nth-child(1),
+    #headingTwo>button:nth-child(1),
+    #headingThree>button:nth-child(1) {
+        font-size: 1.35em;
+    }
+
+
 
 }
 
+
+.loupe {
+    background: url("/images/loupe.svg") no-repeat left;
+    background-size: 20px;
+}
 
 #caracteristiques,
 #ingredients,
 #tableau-nutritionnel {
-
-
     background-color: rgba(255, 255, 255, 0);
 }
-
-
-
 
 .pane {
     margin-bottom: 10px;
     background-color: #6ed1d83d;
     border: solid #6ed1d81c;
     border-radius: 4px;
-    /* padding: 0 18px; */
-
 }
-
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion-button {
@@ -194,7 +213,6 @@ h2 {
 #headingThree {
     background-color: rgb(200, 243, 247)
 }
-
 
 
 .accordion-button:link,
