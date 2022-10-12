@@ -1,11 +1,10 @@
 /* eslint-disable no-undef */
-// import { accordeon } from "./accordeon.js";
+
 import { afficherImageProduit, afficherScores } from "./images.js";
 import { afficherTableau } from "./tableau.js";
 import { afficherCaracteristiques } from "./caracteristiques.js";
 import { afficherIngredients } from "./ingredients.js";
 
-// accordeon();
 const $section = $("#section");
 const $code = $("#rechercher");
 const $formulaire = $("#demande");
@@ -33,6 +32,8 @@ const afficher = function (resultat) {
 $formulaire.on("submit", function (e) {
     $section.attr("id", "masquer");
     $section.removeAttr("id", "montrer");
+    $(".collapse").collapse("hide");
+
     const $adresseReq =
         "http://fr.openfoodfacts.org/api/v2/search?code=" + $code.val();
     if (regex.test($code.val())) {
@@ -46,6 +47,7 @@ $formulaire.on("submit", function (e) {
                 console.table(resultat);
 
                 afficher(resultat);
+
                 $section.removeAttr("id", "masquer");
                 $section.attr("id", "montrer");
             }

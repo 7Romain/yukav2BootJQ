@@ -216,7 +216,9 @@ table {
     vertical-align: middle;
 }
 
-
+.accordion-item {
+    border: none;
+}
 
 
 .cacher {
